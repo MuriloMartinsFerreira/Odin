@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d0ecea;
+    margin: 0;
+}
+
+header {
+    font-size: large;
+    text-align: center;
+    color: #ffefd3;
+    background-color: #8b7a5e;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+}
+
+.registro {
+    background-color: #fffee4;
+    padding: 20px;
+    padding-top: 5px;
+    color: #8b7a5e;
+    margin: auto;
+    width: 700px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.359);
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 30px;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 10px;
+}
