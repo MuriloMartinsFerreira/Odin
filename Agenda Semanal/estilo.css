@@ -18,6 +18,7 @@ header {
     background-color: #fffee4;
     padding: 20px;
     padding-top: 5px;
+    padding-bottom: 2px;
     color: #8b7a5e;
     margin: auto;
     width: 700px;
@@ -31,7 +32,40 @@ input[type="checkbox"] {
     margin-left: 30px;
 }
 
-textarea{
+textarea {
     width: 100%;
     border-radius: 10px;
+}
+
+.agenda {
+    width: 1400px;
+    border-collapse: collapse;
+    margin: 80px auto;
+    table-layout: fixed;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+th{
+    background-color: #8b7a5e;
+    color: #ffefd3;
+}
+
+td{
+    background-color: #fffee4;
+    color: #8b7a5e;
+}
+
+footer {
+    padding: 20 px;
+    margin-top: 30px;
+    text-align: center;
+    margin: auto;
 }

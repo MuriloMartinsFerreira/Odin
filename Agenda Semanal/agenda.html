@@ -19,19 +19,19 @@
         <div id="dias">
             <p><strong>Selecione os dias em que realizará a atividade:</strong></p>
             <p>
-                <input type="checkbox" name="dia" id="seg" value="Segunda">
+                <input type="checkbox" name="dia" id="seg" value="1">
                 <label for="seg"><strong>Segunda</strong></label>
 
-                <input type="checkbox" name="dia" id="ter" value="Terça">
+                <input type="checkbox" name="dia" id="ter" value="2">
                 <label for="ter"><strong>Terça</strong></label>
 
-                <input type="checkbox" name="dia" id="qua" value="Quarta">
+                <input type="checkbox" name="dia" id="qua" value="3">
                 <label for="qua"><strong>Quarta</strong></label>
 
-                <input type="checkbox" name="dia" id="qui" value="Quinta">
+                <input type="checkbox" name="dia" id="qui" value="4">
                 <label for="qui"><strong>Quinta</strong></label>
 
-                <input type="checkbox" name="dia" id="sex" value="Sexta">
+                <input type="checkbox" name="dia" id="sex" value="5">
                 <label for="sex"><strong>Sexta</strong></label>
             </p>
         </div>
@@ -41,17 +41,60 @@
             </p>
             <p>
                 <textarea id="atividade" rows="5" placeholder="Escreva aqui..."></textarea>
+                <input type="button" value="Registrar" onclick="registrar()" style="border-radius: 10px;">
             </p>
         </div>
     </section>
-    <section class="agenda">
-        <table>
+    <section>
+        <table class="agenda" id="agenda">
             <tr>
                 <th>Segunda</th>
                 <th>Terça</th>
                 <th>Quarta</th>
                 <th>Quinta</th>
                 <th>Sexta</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </section>
