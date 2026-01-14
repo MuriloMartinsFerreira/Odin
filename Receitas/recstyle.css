@@ -1,0 +1,25 @@
+section {
+    background-color: #fff458;
+    border-radius: 15px;
+    padding: 20px;
+    
+    /* 1. Define uma largura para o margin: auto funcionar */
+    width: 80%; 
+    max-width: 500px; /* Evita que fique gigante em telas largas */
+    
+    /* 2. Centraliza a section na página */
+    margin: 20px auto; 
+    
+    /* 3. Centraliza o conteúdo (texto e imagens) dentro da section */
+    display: flex;
+    flex-direction: column; /* Empilha os itens um embaixo do outro */
+    align-items: center;    /* Centraliza horizontalmente no modo coluna */
+    text-align: center;     /* Garante que textos fiquem centralizados */
+}
+
+h1{
+    background-color: red;
+    color: rgb(255, 220, 154);
+    padding: 10px;
+    border-radius: 15px;
+}
