@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 10px 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    gap: 20px;
+    list-style-type: none;
+    flex: auto;
+    padding: 0;
+}
+
+.link_left{
+    justify-content: flex-start;
+}
+
+.link_right{
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.Logo{
+    background-color: white;
+    color: red;
+    padding: 20px;
+}
