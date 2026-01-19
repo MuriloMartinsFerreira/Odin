@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+body {
+  margin: 0;
+  background: #eee;
+  font-family: Besley, serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 900;
+    color: rebeccapurple;
+    font-style: italic;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+button{
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 24px;
+}
