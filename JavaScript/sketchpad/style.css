@@ -40,3 +40,28 @@ body{
     box-sizing: border-box; /* Garante que a borda não aumente o tamanho do pixel */
     background-color: white;
 }
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin-top: 15px;
+}
+
+button{
+    padding: 20px 40px;
+    font-size: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5383f3;
+    color: white;
+    cursor: pointer;
+}
+
+#colorPicker{
+    width: 200px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}

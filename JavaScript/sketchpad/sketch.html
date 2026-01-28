@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sketchpad</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="sketch">
         <div class="logo">Online Sketchpad</div>
-        <div id ="sketchpad"></div>
+        <div id="sketchpad"></div>
+        <div class="controls">
+            <input id="colorPicker" type="color" value="#ffc824">
+            <button onclick="resetSketchpad()">Reset Sketchpad</button>
+        </div>
     </div>
     <script src="sketch.js"></script>
 </body>
