@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -9,7 +9,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-header{
+header {
     display: flex;
     font-family: 'Playfair Display', serif;
     justify-content: center;
@@ -23,12 +23,12 @@ header{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
-.biblioteca{
-    background-color:#F5F0E6;
+.biblioteca {
+    background-color: #F5F0E6;
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.3);
 }
 
-.estante{
+.estante {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(5, minmax(100px, 1fr));
@@ -37,7 +37,10 @@ header{
     overflow-y: auto;
 }
 
-.card{
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
     height: 175px;
     border-radius: 20px;
@@ -46,7 +49,12 @@ header{
     border: 1px solid #E5E0D8;
 }
 
-.bot{
+.titulo {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.bot {
     background-image: url(./imagens/estante.jpg);
     background-size: cover;
     z-index: 2;
@@ -58,7 +66,7 @@ header{
     gap: 20px;
 }
 
-#novoLivro{
+#novoLivro {
     font-size: 20px;
     font-weight: bold;
     padding: 10px 20px 10px 20px;
@@ -73,4 +81,54 @@ footer {
     font-weight: bold;
     opacity: 0.8;
     color: goldenrod;
+}
+
+dialog {
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+.form-dialog {
+    display: grid;
+    width: 400px;
+    height: 400px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn,.excluir{
+    border: 0;
+    border-radius: 10px;
+    padding: 0.55rem 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+}
+
+.btn-ghost {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.form-dialog h2 {
+    text-align: center;
+}
+
+.excluir {
+    background: #dc2626;
+    color: #fff;
 }

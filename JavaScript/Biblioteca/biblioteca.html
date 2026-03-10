@@ -13,25 +13,8 @@
         Biblioteca Pessoal
     </header>
     <div class="biblioteca">
-        <div class="estante">
-            <div class="card">
-                Livro 1
-            </div>
-            <div class="card">
-                Livro 2
-            </div>
-            <div class="card">
-                Livro 3
-            </div>
-            <div class="card">
-                Livro 3
-            </div>
-            <div class="card">
-                Livro 3
-            </div>
-            <div class="card">
-                Livro 3
-            </div>
+        <div class="estante" id="estante">
+
         </div>
     </div>
     <div class="bot">
@@ -40,6 +23,23 @@
         </div>
         <footer>@Murilo M. Ferreira</footer>
     </div>
+
+    <dialog id="book-dialog">
+        <form class="form-dialog" id="form-dialog" method="dialog">
+            <h2>Informações do Livro</h2>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="nome">Autor:</label>
+            <input type="text" id="autor" name="autor"><br><br>
+            <label for="nome">Paginas:</label>
+            <input type="number" id="pages" name="pages" min="0"><br><br>
+            <div class="action">
+                <button class="btn btn-ghost" id="cancel" type="button">Cancelar</button>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
