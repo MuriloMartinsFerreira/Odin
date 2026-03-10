@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Biblioteca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Biblioteca</h1>
+      <p>Organize seus livros e acompanhe seu progresso de leitura.</p>
+    </div>
+    <button class="btn btn-primary" id="new-book-btn" type="button">+ Novo livro</button>
+  </header>
+
+  <main class="container">
+    <section class="books-section" aria-label="Lista de livros">
+      <div class="books-grid" id="books-grid">
+        <article class="book-card" data-book-id="demo-1">
+          <h2 class="book-title">Dom Casmurro</h2>
+          <p class="book-author">Machado de Assis</p>
+          <p class="book-pages">256 páginas</p>
+          <span class="book-status status-read">Lido</span>
+          <div class="card-actions">
+            <button class="btn btn-ghost" type="button">Alterar status</button>
+            <button class="btn btn-danger" type="button">Remover</button>
+          </div>
+        </article>
+
+        <article class="book-card" data-book-id="demo-2">
+          <h2 class="book-title">O Hobbit</h2>
+          <p class="book-author">J.R.R. Tolkien</p>
+          <p class="book-pages">310 páginas</p>
+          <span class="book-status status-unread">Não lido</span>
+          <div class="card-actions">
+            <button class="btn btn-ghost" type="button">Alterar status</button>
+            <button class="btn btn-danger" type="button">Remover</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="book-dialog" id="book-dialog">
+    <form id="book-form" method="dialog">
+      <h2>Novo livro</h2>
+
+      <label for="title">Título</label>
+      <input id="title" name="title" type="text" placeholder="Ex: O Pequeno Príncipe" required>
+
+      <label for="author">Autor</label>
+      <input id="author" name="author" type="text" placeholder="Ex: Antoine de Saint-Exupéry" required>
+
+      <label for="pages">Páginas</label>
+      <input id="pages" name="pages" type="number" min="1" placeholder="Ex: 96" required>
+
+      <label class="checkbox-row" for="read">
+        <input id="read" name="read" type="checkbox">
+        Já li este livro
+      </label>
+
+      <div class="dialog-actions">
+        <button class="btn btn-ghost" type="button" id="cancel-dialog">Cancelar</button>
+        <button class="btn btn-primary" type="submit">Adicionar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
