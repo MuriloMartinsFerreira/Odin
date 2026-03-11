@@ -42,7 +42,7 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    height: 175px;
+    height: 190px;
     border-radius: 20px;
     box-shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
     padding: 20px;
@@ -71,7 +71,7 @@ header {
     font-weight: bold;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
-    background-color: gold;
+    background-color: goldenrod;
     margin-top: 5px;
     border: none;
 }
@@ -92,7 +92,8 @@ dialog {
 .form-dialog {
     display: grid;
     width: 400px;
-    height: 400px;
+    height: 420px;
+    gap: 10px;
 }
 
 label {
@@ -131,4 +132,25 @@ label {
 .excluir {
     background: #dc2626;
     color: #fff;
+}
+
+input{
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.read{
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: greenyellow;
+    color: green
+}
+
+.unread{
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: rgb(255, 0, 0);
+    color: rgb(88, 0, 0)
 }

@@ -13,22 +13,28 @@ form.addEventListener('submit', (event) => {
     let nome = form.nome.value;
     let autor = form.autor.value;
     let pages = form.pages.value;
-    addBookToLibrary(nome, autor, pages);
+    let lido = form.lido.checked;
+    addBookToLibrary(nome, autor, pages, lido);
     dialog.close();
 });
 
 const myLibrary = [];
 
-function Book(nome, autor, pages) {
+function Book(nome, autor, pages, lido) {
     this.nome = nome;
     this.autor = autor;
     this.pages = pages;
+    if (lido == true) {
+        this.lido = "Já li";
+    } else {
+        this.lido = "Não li";
+    }
     this.id = crypto.randomUUID();
 }
 
-function addBookToLibrary(nome, autor, pages) {
+function addBookToLibrary(nome, autor, pages, lido) {
 
-    let newbook = new Book(nome, autor, pages);
+    let newbook = new Book(nome, autor, pages, lido);
     myLibrary.push(newbook);
     render();
 }
@@ -43,12 +49,23 @@ function render() {
         card.classList.add("card");
         card.id = livro.id;
 
-        card.innerHTML = `<div class="titulo">${livro.nome}</div>
-        <div>
-        <p>${livro.autor}</p>
-        <p>Paginas: ${livro.pages}</p>
-        </div>
-        <button class="excluir" data-index="${index}">Excluir</button>`;
+        if (livro.lido == "Já li") {
+            card.innerHTML = `<div class="titulo">${livro.nome}</div>
+            <div>
+            <p>${livro.autor}</p>
+            <p>Paginas: ${livro.pages}</p>
+            <p class="read">${livro.lido}</p>
+            </div>
+            <button class="excluir" data-index="${index}">Excluir</button>`;
+        } else {
+            card.innerHTML = `<div class="titulo">${livro.nome}</div>
+            <div>
+            <p>${livro.autor}</p>
+            <p>Paginas: ${livro.pages}</p>
+            <p class="unread">${livro.lido}</p>
+            </div>
+            <button class="excluir" data-index="${index}">Excluir</button>`;
+        }
         estante.appendChild(card);
 
         let excluir = card.querySelector(".excluir")
@@ -57,5 +74,6 @@ function render() {
             render();
         })
     })
+    form.reset();
 }
 
